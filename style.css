@@ -200,7 +200,48 @@ table {
 .viderPanier:active{
   color: black;
 }
+/* page produits*/
 
+.appareil {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  align-items: center;
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.appareil img {
+  object-fit: cover;
+  width: 50%;
+}
+
+select {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.appareil-description,
+.nom {
+  margin-top: 0.5rem;
+}
+
+#panier:active {
+  background-color: grey;
+  color: black;
+font-weight:bold;
+
+}
 
 
 @media screen and (max-width: 768px ){
