@@ -4,16 +4,15 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
         <link rel="stylesheet" href="/style.css" >
-        <meta name="description" content="caractèristique des produits orinoco" />
-        <title>Description du produit</title>
+        <meta name="description" content="panier orinoco" />
+        <title>Votre panier</title>
       </head>
 
 <body>
   <header>
-    <img class="logo" src="../images/logo-orinoco.png" alt="logoorinoco" />
+    <img class="logo" src="/frontend/images/logo-orinoco.png" alt="logoorinoco" />
     <nav>
       <a href="/frontend/pages/panier.html">Panier<i class="fas fa-shopping-cart"></i> </a>
       <a href="/index.html"> Accueil <i class="fas fa-store"></i></a>
@@ -21,7 +20,7 @@
   </header>
 
   <div class="image-bandeau">
-    <img src="../images/bandeau.jpeg" alt="image-bandeau" />
+    <img src="/frontend/images/bandeau.jpeg" alt="image-bandeau" />
     <div class="texte-bandeau">
       <h1>Orinophotos</h1>
       <p>Pour passer commande</p>
@@ -68,30 +67,32 @@
 
     <div>
       <label for="nom">Nom *:</label><br />
-      <input type="text" id="nom" name="nom" required="required" placeholder="entrez nom" />
+      <input type="text" id="nom" name="nom" required="required" placeholder="moualla" />
     </div>
 
     <div>
       <label for="prenom">Prenom *:</label><br />
-      <input type="text" id="prenom" name="prenom" required="required" placeholder="entrez prenom" />
+      <input type="text" id="prenom" name="prenom" required="required" placeholder="raneem" />
     </div>
 
     <div>
       <label for="adresse">Adresse *:</label><br />
-      <input type="text" id="adresse" name="adresse" required="required" placeholder="entrez adresse" />
+      <input type="text" id="adresse" name="adresse" required="required" placeholder="3 rue des cerises" />
     </div>
 
     <div>
       <label for="ville">Ville *:</label><br />
-      <input type="text" id="ville" name="text" required="required" placeholder=" entrez ville " />
+      <input type="text" id="ville" name="text" required="required" placeholder=" paris "
+        pattern="^[a-zA-Z]{1}[a-zA-Z'À-ÿ -]+$" />
     </div>
 
     <div>
       <label for="email">E-mail *:</label><br />
-      <input type="email" id="email" name="email" required="required" placeholder="entrez email" />
+      <input type="email" id="email" name="email" required="required" placeholder="raneem@yahoo.fr"
+        pattern="[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+.[a-zA-Z.]{2,15}" />
     </div>
 
-    <input type="submit" value="Commander" />
+    <input type="submit" value="Commander" id="envoiFormulaire" />
 
     <p>* Champ Obligatoire</p>
   </form>
@@ -103,8 +104,10 @@
       <li><a href="#">Conditions d'utilisations</a></li>
     </ul>
   </footer>
-
+  <script src="/frontend/js/camera.js"></script>
   <script src="/frontend/js/panier.js"></script>
+  
+  
 </body>
 
 </html>
