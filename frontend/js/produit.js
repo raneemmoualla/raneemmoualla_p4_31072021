@@ -32,7 +32,7 @@ const display = camera => {
           <option value="2">2</option>
           <option value="3">3</option>
         </select>         
-        <a href ="../pages/panier.html"><button type ="submit" id="panier" value="submit"> Ajouter au panier</button></a>
+        <a href ="/frontend/pages/panier.html"><button type ="submit" id="panier" value="submit"> Ajouter au panier</button></a>
       </div>
     </div>
   `;
