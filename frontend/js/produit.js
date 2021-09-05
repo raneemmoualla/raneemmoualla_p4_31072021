@@ -51,7 +51,7 @@ const display = camera => {
 const addProductBasket = camera=> {
   camera.quantity = parseInt(document.getElementById('quantity').value);
 
-  //RECUPERE PANIER//memo : let variable=(condition)? "valeursi vrai": "valeur si faux"
+  //RECUPERE PANIER//memo : let variable=(condition)? "valeur si vrai": "valeur si faux"
   let panier = localStorage.getItem('panier') ? JSON.parse(localStorage.getItem('panier')) : [];
 
   //BOUCLE FOR PARCOUR LIGNE PANIER

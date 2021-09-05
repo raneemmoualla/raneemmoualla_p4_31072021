@@ -1,6 +1,3 @@
-
-
-
 let container = document.getElementById("container");
 
 //  FONCTION AFFICHAGE HTML
