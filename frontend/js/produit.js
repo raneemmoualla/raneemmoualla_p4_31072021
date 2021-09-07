@@ -1,4 +1,4 @@
- 
+
 //RECUPERATION DE L URL
 let params = (new URL(document.location)).searchParams;
 
@@ -31,6 +31,7 @@ const display = camera => {
           <option value="1">1</option>
           <option value="2">2</option>
           <option value="3">3</option>
+          <option value="4">4</option>
         </select>         
         <a href ="/frontend/pages/panier.html"><button type ="submit" id="panier" value="submit"> Ajouter au panier</button></a>
       </div>
